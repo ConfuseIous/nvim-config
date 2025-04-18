@@ -16,3 +16,5 @@ require("nvim-treesitter.configs").setup {
 }
 
 vim.keymap.set("n", "<leader>f", "<cmd>Telescope find_files<cr>", { desc = "Find Files" })
+vim.opt.clipboard:append("unnamedplus")
+pcall(vim.cmd, "colorscheme xcode")
